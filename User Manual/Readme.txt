@@ -1,0 +1,1 @@
+El objetivo de nuestra aplicación convertidora de unidades de medida esproporcionar a los usuarios una herramienta fácil de usar y confiable que lespermita convertir rápida y precisamente entre diferentes sistemas de unidades.Nuestro objetivo principal es simplificar el proceso de conversión de unidades yeliminar la necesidad de realizar cálculos manuales propensos a errores.
