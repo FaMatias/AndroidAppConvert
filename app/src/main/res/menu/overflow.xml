@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/itemLong"
+        android:title="@string/itemLong" />
+    <item
+        android:id="@+id/itemVolum"
+        android:title="@string/itemVol" />
+    <item
+        android:id="@+id/itemMasa"
+        android:title="@string/itemMasa" />
+    <item
+        android:id="@+id/itemArea"
+        android:title="@string/itemArea" />
+</menu>
