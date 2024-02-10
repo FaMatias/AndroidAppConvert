@@ -25,6 +25,10 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import android.os.Bundle;
+
 public class MainActivity extends AppCompatActivity {
     private EditText email;
    private EditText password;
@@ -33,15 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
     String message;
     public static final String EXTRA_MESSAGE = "com.planidear.appconvert.MESSAGE";
+    private Bundle savedInstanceState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //para que tenga el logo en el action bar https://youtu.be/sNQqn4PEzm4?t=458
-getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher_round);
+    getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setIcon(R.mipmap.ic_launcher_round);
 
         email = findViewById(R.id.username);
         password = findViewById(R.id.password);
@@ -79,6 +85,7 @@ getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
     private void validarUsuario(String URL){
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String> () {
             @Override
             public void onResponse(String response){
@@ -130,3 +137,4 @@ getSupportActionBar().setDisplayShowHomeEnabled(true);
         startActivity(intent);
     }
 }
+ //Fin

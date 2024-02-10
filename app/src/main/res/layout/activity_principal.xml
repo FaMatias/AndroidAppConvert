@@ -40,8 +40,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="360dp"
-        android:layout_height="304dp"
+        android:layout_width="334dp"
+        android:layout_height="401dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="100dp"
         android:orientation="vertical"
@@ -95,6 +95,17 @@
             android:backgroundTint="@color/purple_500"
             android:onClick="abrirArea"
             android:text="@string/btn_Area"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnPlantaPotailizadora"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="abrirPlantaPotabilizadora"
+            android:text="Planta Potabilizadora"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 

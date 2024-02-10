@@ -31,7 +31,7 @@
 
         <EditText
             android:id="@+id/editTextCaudal"
-            android:layout_width="wrap_content"
+            android:layout_width="214dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="numberDecimal" />
@@ -46,11 +46,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Cloro (mg/L):" />
+            android:text="Dosis de cloro (ppm):" />
 
         <EditText
             android:id="@+id/editTextCloro"
-            android:layout_width="wrap_content"
+            android:layout_width="223dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="numberDecimal" />
@@ -65,10 +65,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Sulfato (mg/L):" />
+            android:text="Dosis de sulfato (ppm):" />
 
         <EditText
             android:id="@+id/editTextSulfato"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Concentración de sulfato (mg/L):" />
+
+        <EditText
+            android:id="@+id/editTextConcentracionSulfato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -84,11 +103,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Polielectrolito no ionico (mg/L):" />
+            android:text="Dosis de Poli No Ionico (ppm):" />
 
         <EditText
             android:id="@+id/editTextPolielectrolitonoionico"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="numberDecimal" />
@@ -103,15 +122,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Velocidad (m/h):" />
+            android:text="Concentración de Poli No Ionico (mg/L):" />
 
         <EditText
-            android:id="@+id/editTextVelocidad"
+            android:id="@+id/editTextConcentracionPolicloruro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:inputType="numberDecimal" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editTextVelocidad"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
 
     <Button
         android:id="@+id/buttonCalcular"
@@ -127,5 +162,44 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Resultados:" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graphLinearLayout">
+
+        <LinearLayout
+            android:id="@+id/resultadosLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewResultados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultados:" />
+
+            <CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/textViewResultados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Resultados:" />
+
+            </CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>
