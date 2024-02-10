@@ -14,12 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppConvert"
         tools:targetApi="31">
+
         <activity
             android:name=".AreaActivity"
-            android:exported="false" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MasaActivity"
@@ -75,3 +76,10 @@
     </application>
 
 </manifest>
+
+
+
+
+
+
+
