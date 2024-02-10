@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91366983274",
+    "project_id": "practica-abcd4",
+    "storage_bucket": "practica-abcd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91366983274:android:da7d6771a709fbd51fac13",
+        "android_client_info": {
+          "package_name": "com.planidear.appconvert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlfObe6Z4K8RaWZGgGsbgpTGJ6sg2C-uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
