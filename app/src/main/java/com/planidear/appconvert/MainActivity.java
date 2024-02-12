@@ -25,10 +25,6 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-import android.os.Bundle;
-
 public class MainActivity extends AppCompatActivity {
     private EditText email;
    private EditText password;
@@ -133,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
     public void irRegistrar(View view) {
-        Intent intent = new Intent(getApplicationContext(), RegistroActivity.class);
+        Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
         startActivity(intent);
     }
 }
