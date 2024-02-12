@@ -55,11 +55,5 @@ public class PrincipalActivity extends AppCompatActivity {
 
   }
 
-  public void abrirPlantaPotabilizadora(View view){
-    Intent intent = new Intent(getApplicationContext(), PlantaPotabilizadoraActivity.class);
-    startActivity(intent);
-
-  }
-
 
 }

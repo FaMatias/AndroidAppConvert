@@ -28,8 +28,8 @@
         android:layout_width="350dp"
         android:layout_height="32dp"
         android:layout_marginTop="28dp"
-        android:text="@string/txt_Nombre"
-        android:textColor="#2196F3"
+        android:text="Vinos seleccionados"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="#850000"
             android:onClick="abrirLongitud"
             android:text="@string/btn_Longitud"
             android:textSize="18sp"
@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="#850000"
             android:onClick="abrirVolumen"
             android:text="@string/btn_Volumen"
             android:textSize="18sp"
@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="#850000"
             android:onClick="abrirMasa"
             android:text="@string/btn_Masa"
             android:textSize="18sp"
@@ -92,22 +92,13 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint="#850000"
             android:onClick="abrirArea"
             android:text="@string/btn_Area"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
-        <Button
-            android:id="@+id/btnPlantaPotailizadora"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_500"
-            android:onClick="abrirPlantaPotabilizadora"
-            android:text="Planta Potabilizadora"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+
 
     </LinearLayout>
 
