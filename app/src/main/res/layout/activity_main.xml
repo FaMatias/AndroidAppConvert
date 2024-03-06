@@ -4,89 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:backgroundTint="#F5F5F5"
     tools:context=".MainActivity">
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/custome_edittext"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="20dp" >
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        android:padding="10dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/loginText"
+        <SearchView
+            android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="login"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/custome_edittext"
-            android:drawableLeft="@drawable/ic_baseline_person_24"
-            android:drawablePadding="8dp"
-            android:hint="@string/edt_username"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/cardview_dark_background" />
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:queryHint="Buscar" />
 
-        <EditText
-
-            android:id="@+id/password"
+        <Button
+            android:id="@+id/btn_close"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/custome_edittext"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawablePadding="8dp"
-            android:hint="@string/edt_password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/cardview_dark_background" />
+            android:backgroundTint="#FF401F"
+            android:text="cerrar sesión"
+            app:cornerRadius="50dp" />
 
-        <Button
-            android:id="@+id/loginButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#850000"
-            android:text="@string/btn_Login"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/RegistroButton"
+            <Button
+                android:id="@+id/btn_add_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_500"
+                android:text="agregar fragment"
+                android:textSize="10sp"
+                app:cornerRadius="50dp" />
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_700"
+                android:text="agregar activity"
+                android:textSize="10sp"
+                app:cornerRadius="50dp" />
+        </LinearLayout>
+
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="#850000"
-            android:onClick="irRegistrar"
-            android:text="@string/txt_regis"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+            android:layout_height="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSingle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
-    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
