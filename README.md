@@ -1,10 +1,26 @@
-# AndroidAppConvert
+# Stock de Vinos Exóticos
 
 ## Descripción
 
-Este proyecto es una aplicación para Android que permite a los usuarios comprar vino online y recibirlo en su domicilio. La aplicación ofrece una variedad de vinos de diferentes regiones, tipos y precios, así como información detallada sobre cada producto. Los usuarios pueden registrarse, iniciar sesión, navegar por el catálogo, seleccionar el vino que desean, añadirlo al carrito, introducir su dirección y pagar con mercadopago. La aplicación se encarga de gestionar el pedido y el envío, así como de notificar al usuario sobre el estado de su compra.
+La versión 3.0 representa una evolución significativa del proyecto inicial, adaptándose a desafíos técnicos y enfocándose en una experiencia de usuario especializada en vinos únicos y exóticos.
+Cambios Clave
 
-Este proyecto es el resultado de una evolución de una versión anterior, que era una aplicación para convertir unidades de medida. La idea original era crear una herramienta útil para facilitar las conversiones entre diferentes sistemas de unidades, como el métrico, el imperial o el estadounidense. La aplicación podía convertir unidades de longitud, masa, temperatura, volumen, área, velocidad, tiempo, presión, energía y potencia. La aplicación tenía una interfaz sencilla y funcional, que permitía al usuario introducir el valor y la unidad de origen, y obtener el resultado en la unidad de destino.
+    Modificación del enfoque del proyecto: De un ecommerce general a un stock especializado en vinos exóticos.
+    Funcionalidad de usuario mejorada: Los usuarios ahora pueden agregar información detallada de cada vino, incluyendo el nombre, la cosecha, el color y el precio.
+    Control de inventario personalizado: La aplicación permite a los usuarios gestionar su colección de vinos de cosecha única, facilitando un seguimiento preciso y personal.
+
+La decisión de avanzar a la versión 3.0 se tomó debido a:
+
+    Problemas técnicos: Limitaciones encontradas en la versión anterior que impedían la escalabilidad y la funcionalidad deseada.
+    Demanda del mercado: Un interés creciente en vinos exclusivos que requería una plataforma dedicada.
+    Feedback de usuarios: Sugerencias y comentarios de usuarios que buscaban una herramienta más robusta para gestionar sus colecciones de vinos.
+
+Se planea continuar el desarrollo, con las siguientes mejoras en la hoja de ruta:
+
+    Integración con plataformas de pago: Para facilitar transacciones seguras y eficientes.
+    Recomendaciones personalizadas: Utilizando algoritmos de aprendizaje automático para sugerir vinos basados en las preferencias del usuario.
+    Funciones sociales: Permitir a los usuarios compartir y descubrir nuevas selecciones de vinos entre la comunidad.
+
 
 ## Requisitos
 
